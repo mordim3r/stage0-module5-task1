@@ -29,6 +29,9 @@ public class ArrayTasks {
      */
     public int[] generateNumbers(int length) {
         int[] array = new int[length];
+        for (int i = 0; i <=length; i++) {
+            array[i]=i;
+        }
         return array;
     }
 
@@ -64,7 +67,7 @@ public class ArrayTasks {
     public int findIndexOfNumber(int[] arr, int number) {
         for (int i = 0; i < arr.length; i++) {
             if (number == arr[i]) {
-                return arr[i];
+                return i;
             }
         }
         return -1;
