@@ -11,10 +11,11 @@ public class ArrayTasks {
      * Return a String[] array that will list all the seasons of the year, starting with winter.
      */
     public String[] seasonsArray() {
-         String[] array = {"winter","spring","summer", "autumn"};
-         return array;
-
+        String[] array = {"winter", "spring", "summer", "autumn"};
+        return array;
     }
+
+
 
     /**
      * Generate an int[] array of consecutive positive integers
@@ -27,10 +28,11 @@ public class ArrayTasks {
      * length = 5  -> [1, 2, 3, 4, 5]
      */
     public int[] generateNumbers(int length) {
-        int [] array = new int[length];
+        int[] array = new int[length];
         return array;
-
     }
+
+
 
     /**
      * Find the sum of all elements of the int[] array.
@@ -41,14 +43,14 @@ public class ArrayTasks {
      * arr = [5, -3, -4] -> sum = -2
      */
     public int totalSum(int[] arr) {
-        int sum=0;
+        int sum = 0;
         for (int i = 0; i < arr.length; i++) {
-            sum =sum+arr[i];
-
+            sum = sum + arr[i];
         }
         return sum;
-
     }
+
+
 
     /**
      * Return the index of the first occurrence of number in the arr array.
@@ -61,13 +63,14 @@ public class ArrayTasks {
      */
     public int findIndexOfNumber(int[] arr, int number) {
         for (int i = 0; i < arr.length; i++) {
-            if (number==arr[i]){
+            if (number == arr[i]) {
                 return arr[i];
             }
-
         }
-return -1;
+        return -1;
     }
+
+
 
     /**
      * Return the new String[] array obtained from the arr array
@@ -79,19 +82,14 @@ return -1;
      * arr = ["pineapple", "apple", "pen"] -> ["pen", "apple", "pineapple"]
      */
     public String[] reverseArray(String[] arr) {
-        String[] arr2= new String[arr.length];
-        for (int i = 0; i<arr.length; i++) {
-
-                arr2[i] =arr[arr.length-1-i];
-            }
-
-
-
-
-
+        String[] arr2 = new String[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            arr2[i] = arr[arr.length - 1 - i];
+        }
         return arr2;
-
     }
+
+
 
     /**
      * Return new int[] array obtained from arr int[] array
@@ -106,29 +104,24 @@ return -1;
      */
     public int[] getOnlyPositiveNumbers(int[] arr) {
         int length = arr.length;
-        int count=0;
-
+        int count = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i]>0){
-
+            if (arr[i] > 0) {
                 count++;
-
             }
-
         }
-        int [] arr2 = new int[count];
-        int j=0;
-        for (int i = 0; i < arr.length ; i++) {
-            if (arr[i]>0){
-                arr2[j]=arr[i];
+        int[] arr2 = new int[count];
+        int j = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 0) {
+                arr2[j] = arr[i];
                 j++;
             }
-
         }
-
-return arr2;
-
+        return arr2;
     }
+
+
 
     /**
      * Return a sorted, ragged, two-dimensional int[][] array following these rules:
@@ -142,6 +135,5 @@ return arr2;
      */
     public int[][] sortRaggedArray(int[][] arr) {
         return arr;
-
     }
 }
