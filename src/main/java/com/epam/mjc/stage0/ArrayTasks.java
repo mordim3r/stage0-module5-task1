@@ -29,7 +29,7 @@ public class ArrayTasks {
      */
     public int[] generateNumbers(int length) {
         int[] array = new int[length];
-        for (int i = 0; i <=length; i++) {
+        for (int i = 0; i <length; i++) {
             array[i]=i;
         }
         return array;
